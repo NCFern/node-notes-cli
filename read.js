@@ -1,9 +1,10 @@
 const fs= require('fs')
+const dataJSON = require('./data.json')
 
-const read = fs.readFile(`./${selectFile}`, 'utf8', (err, data) => {
-  console.log(process.argv[2])
+console.log(dataJSON)
+const read = fs.readFile('dataJSON', 'utf8', (err, data) => {
   if (!err) {
-    console.log(`Text of ${selectFile}: ${data}`);
+    console.log(dataJSON);
   } else {
     console.log('There was an error');
   }

@@ -5,7 +5,5 @@ const selectFile = process.argv[2];
 console.log(process.argv);
 
 if (selectFile === 'read') {
-  console.log(read());
-
-
+  console.log(read);
 }
