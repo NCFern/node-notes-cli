@@ -1,13 +1,14 @@
 const fs= require('fs')
-const dataJSON = require('./data.json')
+const data = require('./data.json')
 
-console.log(dataJSON)
-const read = fs.readFile('dataJSON', 'utf8', (err, data) => {
-  if (!err) {
-    console.log(dataJSON);
-  } else {
-    console.log('There was an error');
-  }
-});
+const read = console.log(JSON.stringify(data.notes[1]))
 
 exports.read = read;
+
+// const read = fs.readFile('./data.json.notes', 'utf8', (err, data) => {
+//   if (!err) {
+//     console.log(data);
+//   } else {
+//     console.log('There was an error');
+//   }
+// });
